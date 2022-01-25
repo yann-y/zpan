@@ -62,6 +62,7 @@ func (c *Config) WithCustomHost(s string) *Config {
 
 type Constructor func(provider *Config) (Provider, error)
 
+// 存储选择
 var supportProviders = map[string]Constructor{
 	"COS":   NewCOSProvider,
 	"KODO":  NewKODOProvider,
@@ -74,6 +75,7 @@ var supportProviders = map[string]Constructor{
 	"USS":   NewUSSProvider,
 	//"od": NewODProvider,
 	//"gd": NewGDProvider,
+	"ipfs": NewIpfsProvider, // ipfs存储
 }
 
 func New(conf *Config) (Provider, error) {
