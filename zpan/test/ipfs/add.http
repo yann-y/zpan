@@ -1,0 +1,18 @@
+curl 'http://192.168.238.128:5001/api/v0/add?stream-channels=true&pin=false&wrap-with-directory=false&progress=false' \
+  -H 'Connection: keep-alive' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36' \
+  -H 'Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryLtm8VaEHXmSxqaOv' \
+  -H 'Accept: */*' \
+  -H 'Origin: http://192.168.238.128:5001' \
+  -H 'Referer: http://192.168.238.128:5001/ipfs/bafybeihcyruaeza7uyjd6ugicbcrqumejf6uf353e5etdkhotqffwtguva/' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9' \
+  -H 'Cookie: z-token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ6cGxhdFVzZXJzIiwiZXhwIjoxNjQzNjg1NzczLCJpYXQiOjE2NDMwODA5NzMsImlzcyI6InpwbGF0IiwibmJmIjoxNjQzMDgwOTczLCJzdWIiOiIyIiwicm9sZXMiOlsiYWRtaW4iXX0.gkeAMH7v_--SdXfeR-5bv4mS0pbE3JQpQHpapOELEpKAftFnpQnKal2bcdz84Gxh6cVt9sF7oNGmnEDPuOzA6g; z-role=admin' \
+  --data-raw $'------WebKitFormBoundaryLtm8VaEHXmSxqaOv\r\nContent-Disposition: form-data; name="file"; filename="khl20220125171504312.png"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundaryLtm8VaEHXmSxqaOv--\r\n' \
+  --compressed \
+  --insecure
+
+{
+    "Name": "khl20220125171504312.png",
+    "Hash": "QmZp5WdbGfYSNvUnrxSAvcsRDU1ckRTX44GjkVxzLCjJBe",
+    "Size": "408119"
+}
